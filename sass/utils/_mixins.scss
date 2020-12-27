@@ -1,0 +1,19 @@
+// Здесь миксины - настраемые елементы. Ниже пример
+
+// @mixin centeredFlex ($type: flex) {
+//     display: $type;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// p {
+//     @include centeredFlex();
+// }
+
+// div {
+//      @include centeredFlex();
+// }
+
+// button {
+//      @include centeredFlex(inline-flex);
+// }
