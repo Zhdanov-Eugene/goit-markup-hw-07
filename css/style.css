@@ -391,159 +391,151 @@ img {
   padding: 0px;
 }
 
-.modal-form {
+.modal .desc {
+  /* display: flex; */
+  flex-direction: column;
+
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  outline: 1px solid red;
+}
+
+.desc .title {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  text-align: left;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  letter-spacing: 0.01em;
+
+  color: var(--hero-text-color);
+}
+
+.desc .modal-icon {
+  position: absolute;
+  z-index: 1;
+
+  left: 12px;
+  bottom: 11px;
+  width: 18px;
+  height: 18px;
+
+  fill: var(--secondary-text-color);
+
+  transition: fill 250ms var(--time-function);
+}
+
+.modal-input {
+  position: relative;
+
+  width: 448px;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  border-radius: 4px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  transition: border-color 250ms var(--time-function),
+    color 250ms var(--time-function);
+}
+
+/*  */
+
+.modal .form {
   display: flex;
   flex-direction: column;
-  height: 342px;
+  max-height: 342px;
   margin-top: 0px;
   margin-bottom: 20px;
 
   text-align: left;
-
-  /* outline: 1px solid red; */
-}
-/*  */
-
-.modal-form .title-name {
-  margin-top: 0px;
-  margin-bottom: 4px;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.7;
-
-  letter-spacing: 0.01em;
-
-  color: var(--hero-text-color);
 }
 
-.modal-form .input-files {
+/* ////////////////////////////////////////////////////////////// */
+/* .modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+} */
+
+.modal-label {
+  display: flex;
   position: relative;
+  flex-direction: column;
   margin-bottom: 10px;
 }
 
-.input-files svg {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  fill: var(--title-text-color);
-  transform: translateY(-50%);
-  transition: var(--transition-time) var(--time-distribution-function);
-
-  /* pointer-events: none; */
+.comment-label {
+  margin-bottom: 20px;
 }
 
-.input-files input:hover + svg,
-.input-files input:focus + svg {
-  fill: var(--accent-color);
+.modal-input.comment {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
 }
 
-.modal .modal-form input {
-  height: 40px;
-  padding: 12px 16px 12px 42px;
-}
-
-.modal .modal-form input,
-.modal .modal-form textarea {
-  width: 100%;
+.comment::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  background-color: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: cololr var(--transition-time) var(--time-distribution-function),
-    border var(--transition-time) var(--time-distribution-function);
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form textarea {
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
+.modal-input:focus {
+  outline: transparent;
+  border-color: var(--accent-text-color);
 }
 
-.modal-form input:hover,
-.modal-form input:focus,
-.modal-form input:focus-within,
-.modal-form textarea:hover,
-.modal-form textarea:focus {
-  border: 1px solid var(--accent-color);
-  /* Удаляем стандартный аутлайн чтоб виден был свой в Chrome */
-  outline: 0;
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-text-color);
 }
 
-.modal .check label {
+.checkbox-label {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.modal .check .svg-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-right: 7px;
-  border-radius: 2px;
-  background-origin: border-box;
-
-  border: 2px solid var(--title-text-color);
-  background-color: transparent;
-  fill: transparent;
-
-  transition: border-color var(--transition-time)
-      var(--time-distribution-function),
-    background-color var(--transition-time) var(--time-distribution-function),
-    fill var(--transition-time) var(--time-distribution-function),
-    box-shadow var(--transition-time) var(--time-distribution-function);
-}
-
-.modal .check label:hover + .svg-check,
-.modal .check input:focus + .svg-check {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  /* box-shadow: 0 0 0 4px var(--accent-color); */
-  fill: var(--body-color);
-}
-
-.modal .check {
   margin-bottom: 30px;
-}
-
-.modal .check a {
-  color: var(--accent-color);
-  text-decoration: underline;
-  margin-left: 7px;
-}
-
-.modal .check input:checked + .svg {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  fill: var(--main-light-color);
-}
-
-.check .text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
+  text-align: center;
 
-  color: var(--hero-text-color);
+  color: var(--main-text-color);
 }
 
-.modal .check a {
-  color: var(--accent-color);
+.check-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--time-function),
+    border 250ms var(--time-function);
 }
 
-.modal-form label {
-  height: 68px;
+.checkbox-input:checked + .check-icon {
+  background-color: var(--accent-text-color);
+  background-origin: border-box;
+  border: none;
 }
 
+.contract-link {
+  text-decoration: underline;
+  color: var(--accent-text-color);
+}
+/* /////////////////////////////////////////////// */
 /* ..........Section.......... */
 /* .section {
   padding-top: 94px;
