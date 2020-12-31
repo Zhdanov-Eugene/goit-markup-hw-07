@@ -422,7 +422,7 @@ img {
   position: relative;
   padding: 0px;
   margin-top: 0px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 
 .modal-form .input-files:last-child {
@@ -436,10 +436,14 @@ img {
   left: 12px;
 
   fill: var(--title-text-color);
-  transform: translateY(+23%);
+  /* transform: translateY(+23%); */
 
   transition: var(--transition-time) var(--time-distribution-function);
   /* pointer-events: none; */
+}
+
+.modal span {
+  display: block;
 }
 
 .input-files input:hover + svg,
