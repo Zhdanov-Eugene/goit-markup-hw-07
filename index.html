@@ -71,42 +71,30 @@
               </svg>
             </button>
             <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
-            <!-- /////////////////////////////// -->
             <form class="form-modal">
               <div class="modal-form">
-                <label>
-                  <div class="title-name">Имя</div>
-                  <div class="input-files">
-                    <input name="name" type="name" />
-                    <svg width="18" height="18">
-                      <use href="./images/sprite.svg#icon-person-black"></use>
-                    </svg>
-                  </div>
+                <label for="name" class="input-files">
+                  <span class="title-name">Имя</span>
+                  <input name="name" type="name" id="name" />
+                  <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-person-black"></use>
+                  </svg>
                 </label>
-                <label>
-                  <div class="title-name">Телефон</div>
-                  <div class="input-files">
-                    <input name="tel" type="tel" />
-                    <svg width="18" height="18">
-                      <use href="./images/sprite.svg#icon-phone-black"></use>
-                    </svg>
-                  </div>
+                <label for="tel" class="input-files">
+                  <span class="title-name">Телефон</span>
+                  <input name="tel" type="tel" id="tel" />
+                  <svg width="18" height="18">
+                    <use href="./images/sprite.svg#icon-phone-black"></use>
+                  </svg>
                 </label>
-
-                <label for="name" class="icon-label">
+                <label for="email" class="input-files">
                   <span class="title-name">Почта</span>
-                  <input
-                    name="email"
-                    type="email"
-                    class="input-files"
-                    id="name"
-                  />
+                  <input name="email" type="email" id="email" />
                   <svg width="18" height="18">
                     <use href="./images/sprite.svg#icon-email-black"></use>
                   </svg>
                 </label>
-                <!-- Комментарий -->
-                <label>
+                <label class="input-files">
                   <span class="title-name">Комментарий</span>
                   <textarea
                     name="comment"

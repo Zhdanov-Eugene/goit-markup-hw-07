@@ -394,7 +394,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  height: 342px;
+  max-height: 342px;
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -420,7 +420,13 @@ img {
 
 .modal-form .input-files {
   position: relative;
-  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  /* margin-bottom: 10px; */
+}
+
+.modal-form .input-files:last-child {
+  margin-bottom: 0;
 }
 
 .modal-form svg {
@@ -428,11 +434,11 @@ img {
 
   top: 50%;
   left: 12px;
-  bottom: 11px;
-  fill: var(--title-text-color);
-  transform: translateY(-150%);
-  transition: var(--transition-time) var(--time-distribution-function);
 
+  fill: var(--title-text-color);
+  transform: translateY(+23%);
+
+  transition: var(--transition-time) var(--time-distribution-function);
   /* pointer-events: none; */
 }
 
@@ -544,12 +550,6 @@ img {
   color: var(--accent-color);
 } */
 
-.modal-form label {
-  margin-bottom: 10px;
-}
-.modal-form label:last-child {
-  margin-bottom: 0;
-}
 /* /////////////////////////////////////////////// */
 /* ..........Section.......... */
 /* .section {
@@ -843,7 +843,7 @@ img {
   margin: 0px;
   width: 230px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .footer .socials {
@@ -851,14 +851,14 @@ img {
   width: 206px;
   height: 80px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .subscription {
   width: 570px;
   margin-left: 93px;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* якорь-лого-компании */
