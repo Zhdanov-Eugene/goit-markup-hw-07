@@ -21,6 +21,9 @@
   --form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
   --form-input-border-solid-color: rgba(255, 255, 255, 0.3);
   --accent-color-trasparent: #2196f3e6;
+  --button-box-shadow-color: rgba(0, 0, 0, 0.15);
+  --hero-box-shadow-color: rgba(0, 0, 0, 0.25);
+  --link-footer: rgba(255, 255, 255, 0.6);
 }
 
 /* -----global attributes------- */
@@ -63,7 +66,7 @@ img {
   padding-bottom: 10px;
 
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--button-box-shadow-color);
   border-radius: 4px;
   color: var(--body-color);
 
@@ -270,7 +273,7 @@ img {
 
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
 
   text-align: center;
 }
@@ -835,7 +838,7 @@ img {
   background-color: var(--bg-footer-color);
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
 }
 
 .footer .container {
@@ -898,7 +901,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-footer);
 
   transition: var(--transition-time) var(--time-distribution-function);
 }
