@@ -587,7 +587,7 @@ img {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-.clients-section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -674,16 +674,16 @@ img {
 /************** чем мы занимаемся ************/
 /* В секции Чем мы занимаемся текст
  спозиционирован поверх изображения */
-.desc {
+.our-works {
   position: relative;
   display: flex;
 }
 
-.desc .item + .item {
+.our-works .item + .item {
   margin-left: 30px;
 }
 
-.desc .overlay {
+.our-works .overlay {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -695,7 +695,7 @@ img {
   background-color: var(--overlay-section-work-color);
 }
 
-.desc h3 {
+.our-works h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -787,7 +787,7 @@ img {
 
 /* ....Regular-clients.... */
 
-.clients-section .list {
+.clients .list {
   display: flex;
 }
 
