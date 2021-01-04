@@ -108,8 +108,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 } */
-
-.section .section-title {
+.section {
+  padding-bottom: 94px;
+}
+.section__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -123,21 +125,13 @@ img {
 
 .section-team {
   background-color: var(--team-back-color);
-  padding-bottom: 94px;
-}
-
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .work {
   padding-top: 0px;
-  padding-bottom: 94px;
 }
 .clients {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* .....утилиты....... */
@@ -612,19 +606,23 @@ img {
 /* /////////////////////////////////////////////// */
 
 /* ...........ОСОБЕННОСТИ-features............*/
-.feature-list {
+.features {
+  padding-top: 94px;
+}
+
+.features__items {
   display: flex;
 }
 
-.feature-list .items {
+.features__item {
   width: 270px;
 }
 
-.feature-list .items + .items {
-  margin-left: 30px;
+.features__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.feature-list .title {
+.features__title {
   margin-top: 0px;
   margin-bottom: 10px;
 
@@ -636,7 +634,7 @@ img {
   text-transform: uppercase;
 }
 
-.feature-list .paragraph {
+.features__text {
   margin-top: 0px;
   margin-bottom: 0px;
   font-weight: 400;
@@ -645,7 +643,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.feature-list .thumb {
+.features__thumb {
   margin-top: 0px;
   margin-bottom: 30px;
   height: 120px;
@@ -653,7 +651,7 @@ img {
   border-radius: 4px;
   background-color: var(--team-back-color);
 }
-.feature-list .thumb svg {
+.features__icon {
   margin: 25px 100px;
 }
 
