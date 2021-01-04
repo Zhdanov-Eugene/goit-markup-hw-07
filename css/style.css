@@ -655,39 +655,6 @@ img {
   margin: 25px 100px;
 }
 
-/* ::before-общий */
-/* .feature-list .items::before {
-  content: '';
-  display: block;
-  height: 120px;
-  outline: 1px solid red;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
- margin-bottom: 30px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.icon-antenna::before {
-  background-image: url();
-}
-.icon-clock::before {
-  background-image: url();
-}
-.icon-diagram::before {
-  background-image: url();
-}
-.icon-astronaut::before {
-  background-image: url();
-}  */
-/* альтернатива без доп.класса*/
-/* .feature-list .items:nth-child(1)::before {
-  background-image: url();
-}
-.feature-list .items:nth-child(2)::before {
-  background-image: url();
-} */
-
 /************** чем мы занимаемся ************/
 /* В секции Чем мы занимаемся текст
  спозиционирован поверх изображения */
@@ -696,11 +663,11 @@ img {
   display: flex;
 }
 
-.our-works .item + .item {
-  margin-left: 30px;
+.our-works__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.our-works .overlay {
+.our-works__overlay {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -712,7 +679,7 @@ img {
   background-color: var(--overlay-section-work-color);
 }
 
-.our-works h3 {
+.our-works__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1208,3 +1175,35 @@ img {
 3*текст-шрифт, жирность, центрирование и т.д;
 4*оформление-цвет;
 ***********************************************/
+/* ::before-общий */
+/* .feature-list .items::before {
+  content: '';
+  display: block;
+  height: 120px;
+  outline: 1px solid red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+ margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.icon-antenna::before {
+  background-image: url();
+}
+.icon-clock::before {
+  background-image: url();
+}
+.icon-diagram::before {
+  background-image: url();
+}
+.icon-astronaut::before {
+  background-image: url();
+}  */
+/* альтернатива без доп.класса*/
+/* .feature-list .items:nth-child(1)::before {
+  background-image: url();
+}
+.feature-list .items:nth-child(2)::before {
+  background-image: url();
+} */
