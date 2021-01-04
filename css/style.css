@@ -123,10 +123,6 @@ img {
   margin-bottom: 50px;
 }
 
-.clients {
-  padding-top: 94px;
-}
-
 /* .....утилиты....... */
 
 .list {
@@ -772,11 +768,15 @@ img {
 
 /* regular-clients */
 
-.clients .list {
+.clients {
+  padding-top: 94px;
+}
+
+.clients__items {
   display: flex;
 }
 
-.list .icon a {
+.clients__link {
   fill: var(--cliennt-color);
   border: 1px solid #afb1b8;
 
@@ -794,19 +794,19 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.list .icon {
+.clients__link:hover,
+.clients__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients__item {
   display: flex;
   width: calc((100% - 150px) / 6);
 }
 
-.list .icon:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.list .icon a:hover,
-.list .icon a:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 
 /* =======footer======= */
