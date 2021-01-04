@@ -123,13 +123,6 @@ img {
   margin-bottom: 50px;
 }
 
-.section-team {
-  background-color: var(--team-back-color);
-}
-
-.work {
-  padding-top: 0px;
-}
 .clients {
   padding-top: 94px;
 }
@@ -659,6 +652,10 @@ img {
 /* В секции Чем мы занимаемся текст
  спозиционирован поверх изображения */
 .our-works {
+  padding-top: 0px;
+}
+
+.our-works__items {
   position: relative;
   display: flex;
 }
@@ -690,31 +687,35 @@ img {
   margin: 0;
 }
 
-/* .........our-team........... */
+/* our-team */
 
-.section-team .team {
+.our-team {
+  background-color: var(--team-back-color);
+}
+
+.our-team__items {
   display: flex;
 }
 
-.team .item + .item {
-  margin-left: 30px;
+.our-team__item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.caption {
+.our-team__title {
   padding-top: 94px;
 }
-.team .item {
+.our-team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4p;
   background-color: var(--body-color);
 }
 
-.item .photo {
+.our-team__photo {
   margin-bottom: 30px;
 }
 
-.section-team .name {
+.our-team__name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -726,7 +727,7 @@ img {
   margin-bottom: 10px;
 }
 
-.section-team .profession {
+.our-team__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -737,20 +738,20 @@ img {
   margin-bottom: 30px;
 }
 
-.section-team .socials {
+.our-team__socials-container {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.section-team .socials .list {
+.our-team__socials-items {
   display: flex;
 }
 
-.section-team .socials li:not(:last-child) {
+.our-team__socials-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.section-team .socials a {
+.our-team__socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -763,13 +764,13 @@ img {
   /* background-color: var(--body-color); */
 }
 
-.section-team .socials a:hover,
-.section-team .socials a:focus {
+.our-team__socials-link:hover,
+.our-team__socials-link:focus {
   fill: var(--body-color);
   background-color: var(--accent-color);
 }
 
-/* ....Regular-clients.... */
+/* regular-clients */
 
 .clients .list {
   display: flex;
