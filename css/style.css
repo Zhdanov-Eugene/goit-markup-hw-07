@@ -24,6 +24,7 @@
   --button-box-shadow-color: rgba(0, 0, 0, 0.15);
   --hero-box-shadow-color: rgba(0, 0, 0, 0.25);
   --link-footer: rgba(255, 255, 255, 0.6);
+  --color-testing: #941223;
 }
 
 /* -----global attributes------- */
@@ -54,7 +55,13 @@ img {
   height: auto;
 }
 /* общая стилизация кнопок */
-.button-hero,
+/* .button-submit {
+  margin: 0px;
+  display: inline-flex;
+  justify-content: center;
+} */
+
+.button,
 .button-subscription,
 .button-modal,
 .button-submit {
@@ -83,8 +90,8 @@ img {
     background-color var(--transition-time) var(--time-distribution-function);
 }
 
-.button-hero:hover,
-.button-hero:focus,
+.button:hover,
+.button:focus,
 .button-subscription:hover,
 .button-subscription:focus,
 .button-modal:hover,
@@ -94,6 +101,43 @@ img {
   background-color: var(--team-back-color);
   color: var(--title-text-color);
   cursor: pointer;
+}
+
+/* ..........Section.......... */
+/* .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
+
+.section .section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.section-team {
+  background-color: var(--team-back-color);
+  padding-bottom: 94px;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* .....утилиты....... */
@@ -227,13 +271,13 @@ img {
   color: var(--accent-color);
 }
 
-/* .........header-contacts......... */
+/* contacts-top */
 
-.header-contacts {
+.contacts-top {
   display: flex;
 }
 
-.header-contacts__link {
+.contacts-top__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -248,20 +292,20 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.header-contacts__item:not(:last-child) {
+.contacts-top__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-contacts__link:hover,
-.header-contacts__link:focus {
+.contacts-top__link:hover,
+.contacts-top__link:focus {
   color: var(--accent-color);
 }
-.header-contacts__icon {
+.contacts-top__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-/* .............hero............... */
+/* hero */
 .hero {
   padding-top: 200px;
   max-width: 1600px;
@@ -286,7 +330,7 @@ img {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -544,7 +588,7 @@ img {
 .modal .check input:checked + .svg {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  fill: var(--main-light-color);
+  /* fill: var(--color-testing); */
 }
 
 .check .text {
@@ -566,42 +610,6 @@ img {
 } */
 
 /* /////////////////////////////////////////////// */
-/* ..........Section.......... */
-/* .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
-.section .section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-
-.section-team {
-  background-color: var(--team-back-color);
-  padding-bottom: 94px;
-}
-
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.work {
-  padding-top: 0px;
-  padding-bottom: 94px;
-}
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /* ...........ОСОБЕННОСТИ-features............*/
 .feature-list {

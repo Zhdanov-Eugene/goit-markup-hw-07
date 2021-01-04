@@ -44,17 +44,17 @@
           </ul>
         </nav>
 
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
+        <ul class="contacts-top list">
+          <li class="contacts-top__item">
+            <a class="contacts-top__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-top__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
+          <li class="contacts-top__item">
+            <a class="contacts-top__link" href="tel:+380961111111">
+              <svg class="contacts-top__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -66,78 +66,14 @@
     <!--ОСНОВНОЙ КОНТЕЙНЕР-->
     <main>
       <!--основной заголовок сайта, кнопка/ HERO-->
-      <section class="section hero">
-        <h1 class="hero-title">
+      <section class="hero">
+        <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="button-hero" data-modal-open>
+        <button type="button" class="button" data-modal-open>
           Заказать услугу
         </button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="modal-close" type="button" data-modal-close>
-              <svg width="11" height="11">
-                <use href="./images/sprite.svg#icon-Vector"></use>
-              </svg>
-            </button>
-            <span class="title-modal"
-              >Оставьте свои данные, мы вам перезвоним</span
-            >
-            <form class="form-modal">
-              <div class="modal-form">
-                <label for="name" class="input-files">
-                  <span class="title-name">Имя</span>
-                  <input name="name" type="text" id="name" />
-                  <svg width="18" height="18">
-                    <use href="./images/sprite.svg#icon-person-black"></use>
-                  </svg>
-                </label>
-                <label for="tel" class="input-files">
-                  <span class="title-name">Телефон</span>
-                  <input name="tel" type="tel" id="tel" />
-                  <svg width="18" height="18">
-                    <use href="./images/sprite.svg#icon-phone-black"></use>
-                  </svg>
-                </label>
-                <label for="email" class="input-files">
-                  <span class="title-name">Почта</span>
-                  <input name="email" type="email" id="email" />
-                  <svg width="18" height="18">
-                    <use href="./images/sprite.svg#icon-email-black"></use>
-                  </svg>
-                </label>
-                <label class="input-files">
-                  <span class="title-name">Комментарий</span>
-                  <textarea
-                    name="comment"
-                    placeholder="Введите текст"
-                  ></textarea>
-                </label>
-              </div>
-              <!-- ЧЕКБОКС -->
-              <label class="check">
-                <input
-                  class="visually-hidden"
-                  name="checkbox"
-                  type="checkbox"
-                  value="consent"
-                />
-                <span class="svg-check">
-                  <svg width="16" height="15">
-                    <use href="./images/sprite.svg#icon-check"></use>
-                  </svg>
-                </span>
-                <span class="text"
-                  >Соглашаюсь с рассылкой и принимаю<a href=""
-                    >Условия договора</a
-                  >
-                </span>
-              </label>
-              <button class="button-submit" type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
       </section>
 
       <!--ОСОБЕННОСТИ-features-->
@@ -565,6 +501,63 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <span class="title-modal">Оставьте свои данные, мы вам перезвоним</span>
+        <form class="form-modal">
+          <div class="modal-form">
+            <label for="name" class="input-files">
+              <span class="title-name">Имя</span>
+              <input name="name" type="text" id="name" />
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </label>
+            <label for="tel" class="input-files">
+              <span class="title-name">Телефон</span>
+              <input name="tel" type="tel" id="tel" />
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </label>
+            <label for="email" class="input-files">
+              <span class="title-name">Почта</span>
+              <input name="email" type="email" id="email" />
+              <svg width="18" height="18">
+                <use href="./images/sprite.svg#icon-email-black"></use>
+              </svg>
+            </label>
+            <label class="input-files">
+              <span class="title-name">Комментарий</span>
+              <textarea name="comment" placeholder="Введите текст"></textarea>
+            </label>
+          </div>
+          <!-- ЧЕКБОКС -->
+          <label class="check">
+            <input
+              class="visually-hidden"
+              name="checkbox"
+              type="checkbox"
+              value="consent"
+            />
+            <span class="svg-check">
+              <svg width="16" height="15">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span class="text"
+              >Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+            </span>
+          </label>
+          <button class="button-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <!-- <script src="./js/form.js"></script> -->
   </body>
