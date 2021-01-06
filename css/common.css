@@ -21,20 +21,22 @@
   --form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
   --form-input-border-solid-color: rgba(255, 255, 255, 0.3);
   --accent-color-trasparent: #2196f3e6;
+  --button-box-shadow-color: rgba(0, 0, 0, 0.15);
+  --hero-box-shadow-color: rgba(0, 0, 0, 0.25);
+  --link-footer: rgba(255, 255, 255, 0.6);
+  --color-testing: #941223;
 }
-
+/* ///////////////////////////////////////////////////// */
 /* -----global attributes------- */
 html {
   box-sizing: border-box;
 }
-
 body {
   background-color: var(--body-color);
   color: var(--hero-text-color);
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -44,24 +46,52 @@ address {
   color: inherit;
   font-style: normal;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/* ///////////////////////////////////////////////////// */
 /* общая стилизация кнопок */
-.button-hero,
+/* .button-submit {
+  margin: 0px;
+  display: inline-flex;
+  justify-content: center;
+} */
+
+/* ///////////////////////////////////////////////////// */
+
+/* ...........Button........... */
+
+.hero__button {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.modal__button-submit {
+  padding-right: 55px;
+  padding-left: 56px;
+  transform: translateX(50%);
+}
+
+.subscription__button-subscription {
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.button,
 .button-subscription,
 .button-modal,
-.modal .submit-button {
+.button-submit {
+  display: inline-block;
+
   min-width: 200px;
   max-height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
 
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--button-box-shadow-color);
   border-radius: 4px;
   color: var(--body-color);
 
@@ -78,18 +108,78 @@ img {
     background-color var(--transition-time) var(--time-distribution-function);
 }
 
-.button-hero:hover,
-.button-hero:focus,
+.button:hover,
+.button:focus,
 .button-subscription:hover,
 .button-subscription:focus,
 .button-modal:hover,
 .button-modal:focus,
-.modal .submit-button:hover,
-.modal .submit-button:focus {
+.button-submit:hover,
+.button-submit:focus {
   background-color: var(--team-back-color);
   color: var(--title-text-color);
   cursor: pointer;
 }
+
+/* ///////////////////////////////////////////////////// */
+
+/* ..........Section.......... */
+
+.section {
+  padding-bottom: 94px;
+}
+
+.section__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* socials-net */
+
+.socials-net {
+  display: flex;
+}
+
+.socials-net__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-net__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: var(--transition-time) var(--time-distribution-function);
+}
+
+.socials-net__link--gray {
+  fill: var(--cliennt-color);
+}
+
+.socials-net__link--white {
+  fill: var(--body-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socials-net__link:hover,
+.socials-net__link:focus {
+  fill: var(--body-color);
+  background-color: var(--accent-color);
+}
+
+/* ///////////////////////////////////////////////////// */
 
 /* .....утилиты....... */
 
@@ -119,23 +209,32 @@ img {
   overflow: hidden;
 }
 
-/* ....page-header.... */
+/* ///////////////////////////////////////////////////// */
+
+/* page-header */
+
 .page-header {
   background-color: var(--body-color);
   border-bottom: 1px solid var(--border-color-header);
 }
 
-/* main-nav */
-.main-nav {
-  display: flex;
-  align-items: center;
+.page-header__container {
+  display: inline-flex;
   justify-content: space-between;
 }
 
-/* ......logo...... */
-.logo {
+.page-header__nav {
   display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
 
+/* ///////////////////////////////////////////////////// */
+
+/* ......logo...... */
+
+.logo {
+  /* display: flex; */
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -144,40 +243,43 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo .web {
+.logo__web {
   color: var(--accent-color);
 }
 
-.logo .studio {
+.logo__studio {
   color: var(--text-logo-color);
 }
 
-/* ........site-nav........ */
-
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link.current {
-  color: var(--accent-color);
+.logo__studio--white {
+  color: var(--body-color);
 }
+
+.page-footer__logo {
+  margin-bottom: 20px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* site-nav */
 
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-/* .site-nav .item {
- margin-right: 50px;
-} */
-/* .site-nav .item:last-child {
-  margin-right: 0px;
-} */
-
-.site-nav .item + .item {
-  margin-left: 50px;
+.site-nav__item {
+  margin-right: 50px;
 }
+
+.site-nav__item:last-child {
+  margin-right: 0px;
+}
+
 /* В главной навигации, при помощи псевдоэлемента,
  сделано подчёркивание текущей ссылки */
-.site-nav .link {
+
+.site-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -191,7 +293,8 @@ img {
 
   transition: color var(--transition-time) var(--time-distribution-function);
 }
-.site-nav .link::after {
+
+.site-nav__link::after {
   content: '';
   position: absolute;
   display: block;
@@ -208,19 +311,37 @@ img {
   transition: opacity var(--transition-time) var(--time-distribution-function);
 }
 
-.site-nav .link:hover::after,
-.site-nav .link:focus::after,
-.site-nav .link.current::after {
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
   opacity: 1;
 }
 
-/* .........address-header......... */
+.site-nav__link--current::after {
+  opacity: 1;
+}
 
-.address-header {
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav__link--current {
+  color: var(--accent-color);
+}
+
+/* ///////////////////////////////////////////////////// */
+
+/* contacts-top */
+
+.contacts-top {
   display: flex;
 }
 
-.address-header .link {
+.contacts-top__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-top__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -235,91 +356,66 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.address-header .link:not(:last-child) {
-  margin-right: 50px;
-}
-
-.address-header .link:hover,
-.address-header .link:focus {
+.contacts-top__link:hover,
+.contacts-top__link:focus {
   color: var(--accent-color);
 }
-.address-header .link svg {
+
+.contacts-top__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-/* .............hero............... */
+/* ///////////////////////////////////////////////////// */
 
-/* =======footer======= */
+/* hero */
 
-/* контейнера футера */
+/* footer */
 
-.footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--bg-footer-color);
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
 }
 
-.footer .container {
+.page-footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.addres-info {
+.page-footer__info {
   margin: 0px;
   width: 230px;
-
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
-.footer .socials {
-  margin-left: 70px;
-  width: 206px;
-  height: 80px;
-
-  outline: 1px solid red;
+/* contacts-bottom */
+.contacts-bottom {
+  margin: 0px;
+  padding: 0px;
 }
 
-.subscription {
-  width: 570px;
-  margin-left: 93px;
-
-  outline: 1px solid red;
+.contacts-bottom__item {
+  height: 21px;
 }
 
-/* якорь-лого-компании */
-.nav-footer {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-.web-footer {
-  color: var(--accent-color);
-}
-.studio-footer {
-  color: var(--body-color);
+.contacts-bottom__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-/* адресс */
-.adds-webstudio {
+.contacts-bottom__location {
   color: var(--body-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.link-footer {
+
+.contacts-bottom__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -329,17 +425,20 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.address-footer .list li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.link-footer:focus,
-.link-footer:hover {
+.contacts-bottom__link:focus,
+.contacts-bottom__link:hover {
   color: var(--accent-color);
 }
 
-/* соц-сети */
-.socials .title {
+/* socials-footer */
+.socials-footer {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+  /* outline: 1px solid red; */
+}
+
+.socials-footer__title {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -353,35 +452,14 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .socials .list {
-  display: flex;
+/* subscription */
+.subscription {
+  width: 570px;
+  margin-left: 93px;
+  /* outline: 1px solid red; */
 }
 
-.footer .socials li:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer .socials a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: var(--body-color);
-  background: rgba(255, 255, 255, 0.1);
-
-  transition: var(--transition-time) var(--time-distribution-function);
-}
-
-.footer .socials a:hover,
-.footer .socials a:focus {
-  background-color: var(--accent-color);
-}
-
-/* subscription- форма подписки на рассылку в футере*/
-
-.subscription p {
+.subscription__title {
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -394,10 +472,11 @@ img {
   color: var(--body-color);
 }
 
-.subscription .form {
+.subscription__form {
   display: flex;
 }
-.subscription .form input {
+
+.subscription__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -418,13 +497,15 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.footer .subscription input:hover,
-.footer .subscription input:focus {
+.subscription__input:hover,
+.subscription__input:focus {
   color: var(--body-color);
   border: 1px solid var(--accent-color);
 }
 
-.footer .button-subscription {
+/* button-subscription */
+
+.button-subscription {
   display: flex;
   align-items: center;
 
@@ -432,9 +513,11 @@ img {
   padding-left: 29px;
 }
 
-.footer .button-subscription svg {
+.button-subscription__icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
-/*---------- finish------------ */
+/* footer finish */
+
+/* ///////////////////////////////////////////////////// */
