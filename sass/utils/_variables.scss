@@ -1,25 +1,33 @@
 // ЗДЕСЬ ВСЕ ПЕРЕМЕННЫЕ КОТОРЫЕ РАНЬШЕ БЫЛИ root файлами. + В ПАПКУ ЮТИЛС ДОБАВЛЯЭМ МИКСИНЫ$body-color: #ffffff;
-$text-color: #757575;
-$title-text-color: #212121;
-$accent-color: #2196f3;
-$text-logo-color: #000000;
-$footer-link-color: rgba(255, 255, 255, 0.6);
-$team-background-color: #f5f4fa;
-$background-footer-color: #2f303a;
-$background-hero-color: #c4c4c4;
-$hero-overlay-color: rgba(47, 48, 58, 0.4);
-$cliennts-color: #afb1b8;
-$border-color-header: #ececec;
-$modal-background-color-overlay: rgba(0, 0, 0, 0.2);
-$modal-vector-close-color: #000000;
-$overlay-section-work-color: rgba(47, 48, 58, 0.8);
+$white-color: #ffffff;
+$text-gray-color: #757575;
+$text-title-color: #212121;
+$text-black-color: #000000;
+
+$accent-blue-color: #2196f3;
+
+$cliennts-light-gray-color: #afb1b8;
+$border-header-color: #ececec;
+$modal-vector-close-black-color: #000000;
+
 $time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
 $transition-time: 250ms;
+
+$background-team-color: #f5f4fa;
+$background-footer-color: #2f303a;
+$background-hero-color: #c4c4c4;
+$background-modal-color-overlay: rgba(0, 0, 0, 0.2);
 $background-product-thumb-color: rgba(33, 150, 243, 0.9);
-$form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
+
+$hero-overlay-color: rgba(47, 48, 58, 0.4);
+$overlay-section-work-color: rgba(47, 48, 58, 0.8);
 $form-input-border-solid-color: rgba(255, 255, 255, 0.3);
-$accent-color-trasparent: #2196f3e6;
 $button-box-shadow-color: rgba(0, 0, 0, 0.15);
 $hero-box-shadow-color: rgba(0, 0, 0, 0.25);
 $link-footer-color: rgba(255, 255, 255, 0.6);
-$testing-color: #941223;
+
+$form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
+
+// $testing-color: #941223;
+// $accent-color-trasparent: #2196f3e6;
+// $footer-link-color: rgba(255, 255, 255, 0.6);
