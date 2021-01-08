@@ -1,0 +1,15 @@
+//здесь стили только хедера
+.page-header {
+  background-color: var(--body-color);
+  border-bottom: 1px solid var(--border-color-header);
+}
+
+.page-header__container {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+}

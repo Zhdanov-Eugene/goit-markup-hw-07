@@ -19,43 +19,6 @@
   /* outline: 1px solid red; */
 }
 
-/* contacts-bottom */
-.contacts-bottom {
-  margin: 0px;
-  padding: 0px;
-}
-
-.contacts-bottom__item {
-  height: 21px;
-}
-
-.contacts-bottom__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.contacts-bottom__location {
-  color: var(--body-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.contacts-bottom__link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
-  transition: var(--transition-time) var(--time-distribution-function);
-}
-
-.contacts-bottom__link:focus,
-.contacts-bottom__link:hover {
-  color: var(--accent-color);
-}
-
 /* socials-footer */
 .socials-footer {
   margin-left: 70px;
