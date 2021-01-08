@@ -92,19 +92,19 @@ img {
     background-color var(--transition-time) var(--time-distribution-function);
 }
 
-.button {
+.hero__button {
   padding-right: 32px;
   padding-left: 32px;
 }
 
-.button-submit {
+.modal__button-submit {
   padding-right: 55px;
   padding-left: 56px;
   transform: translateX(50%);
 }
 /* button-subscription */
 
-.button-subscription {
+.subscription__button-subscription {
   display: flex;
   align-items: center;
 
