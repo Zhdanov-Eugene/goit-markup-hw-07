@@ -1,0 +1,132 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-footer-color);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__info {
+  margin: 0px;
+  width: 230px;
+  /* outline: 1px solid red; */
+}
+
+/* contacts-bottom */
+.contacts-bottom {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contacts-bottom__item {
+  height: 21px;
+}
+
+.contacts-bottom__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-bottom__location {
+  color: var(--body-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.contacts-bottom__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: var(--transition-time) var(--time-distribution-function);
+}
+
+.contacts-bottom__link:focus,
+.contacts-bottom__link:hover {
+  color: var(--accent-color);
+}
+
+/* socials-footer */
+.socials-footer {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+  /* outline: 1px solid red; */
+}
+
+.socials-footer__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-color);
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* subscription */
+.subscription {
+  width: 570px;
+  margin-left: 93px;
+  /* outline: 1px solid red; */
+}
+
+.subscription__title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-color);
+}
+
+.subscription__form {
+  display: flex;
+}
+
+.subscription__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+  color: var(--form-visually-hidden-placeholder-color);
+  border: 1px solid var(--form-input-border-solid-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: transparent;
+  transition: var(--transition-time) var(--time-distribution-function);
+}
+
+.subscription__input:hover,
+.subscription__input:focus {
+  color: var(--body-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* footer finish */

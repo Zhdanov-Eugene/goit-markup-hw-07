@@ -1,0 +1,35 @@
+.our-works {
+  padding-top: 0px;
+}
+
+.our-works__items {
+  position: relative;
+  display: flex;
+}
+
+.our-works__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-works__overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  width: 370px;
+  height: 70px;
+
+  background-color: var(--overlay-section-work-color);
+}
+
+.our-works__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-color);
+  margin: 0;
+}

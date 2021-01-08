@@ -63,22 +63,6 @@ img {
 
 /* ...........Button........... */
 
-.hero__button {
-  padding-right: 32px;
-  padding-left: 32px;
-}
-
-.modal__button-submit {
-  padding-right: 55px;
-  padding-left: 56px;
-  transform: translateX(50%);
-}
-
-.subscription__button-subscription {
-  padding-right: 28px;
-  padding-left: 29px;
-}
-
 .button,
 .button-subscription,
 .button-modal,
@@ -108,6 +92,35 @@ img {
     background-color var(--transition-time) var(--time-distribution-function);
 }
 
+.button {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.button-submit {
+  padding-right: 55px;
+  padding-left: 56px;
+  transform: translateX(50%);
+}
+/* button-subscription */
+
+.button-subscription {
+  display: flex;
+  align-items: center;
+
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.button-subscription__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+.button-subscription {
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
 .button:hover,
 .button:focus,
 .button-subscription:hover,
@@ -118,6 +131,35 @@ img {
 .button-submit:focus {
   background-color: var(--team-back-color);
   color: var(--title-text-color);
+  cursor: pointer;
+}
+
+.button-close {
+  position: absolute;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 6px;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  fill: var(--modal-vector-close-color);
+  background-color: var(--body-color);
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  transition: var(--transition-time) var(--time-distribution-function);
+}
+
+.button-close:hover,
+.button-close:focus {
+  fill: var(--accent-color);
   cursor: pointer;
 }
 
@@ -195,7 +237,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid aqua;
+  /* outline: 2px solid aqua; */
 }
 
 .visually-hidden {
@@ -226,9 +268,8 @@ img {
 .page-header__nav {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
-
+/* justify-content: space-between; */
 /* ///////////////////////////////////////////////////// */
 
 /* ......logo...... */
@@ -746,21 +787,6 @@ img {
   border: 1px solid var(--accent-color);
 }
 
-/* button-subscription */
-
-.button-subscription {
-  display: flex;
-  align-items: center;
-
-  padding-right: 28px;
-  padding-left: 29px;
-}
-
-.button-subscription__icon {
-  fill: currentColor;
-  margin-left: 10px;
-}
-
 /* footer finish */
 
 /* ///////////////////////////////////////////////////// */
@@ -811,35 +837,6 @@ img {
 /* .modal span {
   display: block;
 } */
-
-.modal__close {
-  position: absolute;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  padding: 6px;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-
-  fill: var(--modal-vector-close-color);
-  background-color: var(--body-color);
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-
-  transition: var(--transition-time) var(--time-distribution-function);
-}
-
-.modal__close:hover,
-.modal__close:focus {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
 
 .modal__title {
   display: block;
