@@ -1,3 +1,5 @@
+/* socials-net */
+
 .socials-net {
   display: flex;
 }
@@ -14,20 +16,20 @@
   height: 44px;
   border-radius: 50%;
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .socials-net__link--gray {
-  fill: var(--cliennt-color);
+  fill: $cliennts-light-gray-color;
 }
 
 .socials-net__link--white {
-  fill: var(--body-color);
+  fill: $white-color;
   background: rgba(255, 255, 255, 0.1);
 }
 
 .socials-net__link:hover,
 .socials-net__link:focus {
-  fill: var(--body-color);
-  background-color: var(--accent-color);
+  fill: $white-color;
+  background-color: $accent-blue-color;
 }
