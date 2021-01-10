@@ -250,6 +250,34 @@ img {
   margin: 0px;
 }
 
+/* ...........Button........... */
+.button,
+.button-subscription,
+.button-modal,
+.button-submit {
+  display: inline-block;
+  min-width: 200px;
+  max-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .hero__button {
   padding-right: 32px;
   padding-left: 32px;
@@ -264,11 +292,6 @@ img {
 
 /* button-subscription */
 .subscription__button-subscription {
-  padding-right: 28px;
-  padding-left: 29px;
-}
-
-.button-subscription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,31 +307,9 @@ img {
   margin-left: 10px;
 }
 
-.button,
-.button-subscription,
-.button-modal,
-.button-submit {
-  display: inline-block;
-  min-width: 200px;
-  max-height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px var(--button-box-shadow-color);
-          box-shadow: 0px 4px 4px var(--button-box-shadow-color);
-  border-radius: 4px;
-  color: var(--body-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border: 1px solid transparent;
-  -webkit-transition: var(--transition-time) var(--time-distribution-function), background-color var(--transition-time) var(--time-distribution-function);
-  transition: var(--transition-time) var(--time-distribution-function), background-color var(--transition-time) var(--time-distribution-function);
+.button-subscription {
+  padding-right: 28px;
+  padding-left: 29px;
 }
 
 .button:hover,
@@ -319,8 +320,8 @@ img {
 .button-modal:focus,
 .button-submit:hover,
 .button-submit:focus {
-  background-color: var(--team-back-color);
-  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  color: #212121;
   cursor: pointer;
 }
 
@@ -341,18 +342,18 @@ img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  fill: var(--modal-vector-close-color);
-  background-color: var(--body-color);
+  fill: #000000;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: var(--transition-time) var(--time-distribution-function);
-  transition: var(--transition-time) var(--time-distribution-function);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover,
 .button-close:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
   cursor: pointer;
 }
 

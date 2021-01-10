@@ -1,31 +1,4 @@
-.hero__button {
-  padding-right: 32px;
-  padding-left: 32px;
-}
-
-.modal__button-submit {
-  padding-right: 55px;
-  padding-left: 56px;
-  transform: translateX(50%);
-}
-/* button-subscription */
-.subscription__button-subscription {
-  padding-right: 28px;
-  padding-left: 29px;
-}
-
-.button-subscription {
-  display: flex;
-  align-items: center;
-
-  padding-right: 28px;
-  padding-left: 29px;
-}
-
-.button-subscription__icon {
-  fill: currentColor;
-  margin-left: 10px;
-}
+/* ...........Button........... */
 
 .button,
 .button-subscription,
@@ -38,10 +11,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px var(--button-box-shadow-color);
+  background-color: $accent-blue-color;
+  box-shadow: 0px 4px 4px $button-box-shadow-color;
   border-radius: 4px;
-  color: var(--body-color);
+  color: $white-color;
 
   font-weight: 700;
   font-size: 16px;
@@ -52,8 +25,37 @@
   letter-spacing: 0.06em;
 
   border: 1px solid transparent;
-  transition: var(--transition-time) var(--time-distribution-function),
-    background-color var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function,
+    background-color $transition-time $time-distribution-function;
+}
+
+.hero__button {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.modal__button-submit {
+  padding-right: 55px;
+  padding-left: 56px;
+  transform: translateX(50%);
+}
+/* button-subscription */
+
+.subscription__button-subscription {
+  display: flex;
+  align-items: center;
+
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.button-subscription__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+.button-subscription {
+  padding-right: 28px;
+  padding-left: 29px;
 }
 
 .button:hover,
@@ -64,8 +66,8 @@
 .button-modal:focus,
 .button-submit:hover,
 .button-submit:focus {
-  background-color: var(--team-back-color);
-  color: var(--title-text-color);
+  background-color: $background-team-color;
+  color: $text-title-color;
   cursor: pointer;
 }
 
@@ -83,17 +85,17 @@
   height: 30px;
   border-radius: 50%;
 
-  fill: var(--modal-vector-close-color);
-  background-color: var(--body-color);
+  fill: $modal-vector-close-black-color;
+  background-color: $white-color;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .button-close:hover,
 .button-close:focus {
-  fill: var(--accent-color);
+  fill: $accent-blue-color;
   cursor: pointer;
 }
