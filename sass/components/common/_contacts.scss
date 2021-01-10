@@ -1,3 +1,5 @@
+/* contacts-top */
+
 .contacts-top {
   display: flex;
 }
@@ -12,25 +14,24 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--hero-text-color);
+  color: $text-gray-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .contacts-top__link:hover,
 .contacts-top__link:focus {
-  color: var(--accent-color);
+  color: $accent-blue-color;
 }
 
 .contacts-top__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
 /* contacts-bottom */
 .contacts-bottom {
   margin: 0px;
@@ -46,7 +47,7 @@
 }
 
 .contacts-bottom__location {
-  color: var(--body-color);
+  color: $white-color;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -60,10 +61,10 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .contacts-bottom__link:focus,
 .contacts-bottom__link:hover {
-  color: var(--accent-color);
+  color: $accent-blue-color;
 }
