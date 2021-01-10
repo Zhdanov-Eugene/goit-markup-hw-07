@@ -6,28 +6,26 @@
 
   --accent-blue-color: #2196f3;
   --cliennts-light-gray-color: #afb1b8;
-  --border-color-header: #ececec;
+  --border-header-color: #ececec;
+  -modal-vector-close-black-color: #000000;
 
-  --button-hero-color-hover: #188ce8;
-  --footer-link-color: rgba(255, 255, 255, 0.6);
-  --team-back-color: #f5f4fa;
-  --bg-footer-color: #2f303a;
-  --bg-hero-color: #c4c4c4;
+  --background-modal-color-overlay: rgba(0, 0, 0, 0.2);
+  --background-product-thumb-color: rgba(33, 150, 243, 0.9);
+  --background-hero-color: #c4c4c4;
+  --background-footer-color: #2f303a;
+  --background-team-color: #f5f4fa;
+
   --hero-overlay-color: rgba(47, 48, 58, 0.4);
-
-  --modal-bg-color-overlay: rgba(0, 0, 0, 0.2);
-  --modal-vector-close-color: #000000;
   --overlay-section-work-color: rgba(47, 48, 58, 0.8);
+  --form-input-border-solid-color: rgba(255, 255, 255, 0.3);
+  --button-box-shadow-color: rgba(0, 0, 0, 0.15);
+  --hero-box-shadow-color: rgba(0, 0, 0, 0.25)
+ --link-footer: rgba(255, 255, 255, 0.6);
+ 
+--form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
+
   --time-distribution-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-time: 250ms;
-  --background-product-thumb-color: rgba(33, 150, 243, 0.9);
-  --form-visually-hidden-placeholder-color: rgba(255, 255, 255, 0.6);
-  --form-input-border-solid-color: rgba(255, 255, 255, 0.3);
-  --accent-blue-color-trasparent: #2196f3e6;
-  --button-box-shadow-color: rgba(0, 0, 0, 0.15);
-  --hero-box-shadow-color: rgba(0, 0, 0, 0.25);
-  --link-footer: rgba(255, 255, 255, 0.6);
-  --color-testing: #941223;
 }
 /* ///////////////////////////////////////////////////// */
 /* -----global attributes------- */
@@ -132,7 +130,7 @@ img {
 .button-modal:focus,
 .button-submit:hover,
 .button-submit:focus {
-  background-color: var(--team-back-color);
+  background-color: var(--background-team-color);
   color: var(--text-title-color);
   cursor: pointer;
 }
@@ -151,7 +149,7 @@ img {
   height: 30px;
   border-radius: 50%;
 
-  fill: var(--modal-vector-close-color);
+  fill: var(--modal-vector-close-black-color);
   background-color: var(--white-color);
 
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -260,7 +258,7 @@ img {
 
 .page-header {
   background-color: var(--white-color);
-  border-bottom: 1px solid var(--border-color-header);
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 .page-header__container {
@@ -421,7 +419,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--bg-hero-color);
+  background-color: var(--background-hero-color);
   background-image: linear-gradient(
       var(--hero-overlay-color),
       var(--hero-overlay-color)
@@ -479,7 +477,7 @@ img {
   height: 120px;
   width: 270px;
   border-radius: 4px;
-  background-color: var(--team-back-color);
+  background-color: var(--background-team-color);
 }
 
 .features__icon {
@@ -555,7 +553,7 @@ img {
 /* our-team */
 
 .our-team {
-  background-color: var(--team-back-color);
+  background-color: var(--background-team-color);
 }
 
 .our-team__title {
@@ -663,7 +661,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--bg-footer-color);
+  background-color: var(--background-footer-color);
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
@@ -803,7 +801,7 @@ img {
   width: 100%;
   height: 100%;
 
-  background-color: var(--modal-bg-color-overlay);
+  background-color: var(--background-modal-color-overlay);
   opacity: 1;
   transition: opacity var(--transition-time) var(--time-distribution-function);
 }
@@ -1019,7 +1017,7 @@ img {
 
 .filtres {
   color: var(--text-title-color);
-  background-color: var(--team-back-color);
+  background-color: var(--background-team-color);
 
   font-weight: 500;
   font-size: 16px;
