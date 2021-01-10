@@ -1,3 +1,5 @@
+/* ......logo...... */
+
 .logo {
   /* display: flex; */
   font-family: 'Raleway', sans-serif;
@@ -9,15 +11,15 @@
 }
 
 .logo__web {
-  color: var(--accent-color);
+  color: $accent-blue-color;
 }
 
 .logo__studio {
-  color: var(--text-logo-color);
+  color: $text-black-color;
 }
 
 .logo__studio--white {
-  color: var(--body-color);
+  color: $white-color;
 }
 
 .page-footer__logo {

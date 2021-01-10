@@ -533,6 +533,7 @@ img {
           align-items: center;
 }
 
+/* ......logo...... */
 .logo {
   /* display: flex; */
   font-family: 'Raleway', sans-serif;
@@ -544,15 +545,15 @@ img {
 }
 
 .logo__web {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo__studio {
-  color: var(--text-logo-color);
+  color: #000000;
 }
 
 .logo__studio--white {
-  color: var(--body-color);
+  color: #ffffff;
 }
 
 .page-footer__logo {
