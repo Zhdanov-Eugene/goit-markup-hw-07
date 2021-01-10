@@ -1,11 +1,12 @@
-//здесь стили только хедера
+/* page-header */
+
 .page-header {
-  background-color: var(--body-color);
-  border-bottom: 1px solid var(--border-color-header);
+  background-color: $white-color;
+  border-bottom: 1px solid $border-header-color;
 }
 
 .page-header__container {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -13,3 +14,4 @@
   display: flex;
   align-items: center;
 }
+/* justify-content: space-between; */
