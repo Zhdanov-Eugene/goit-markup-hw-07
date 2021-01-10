@@ -431,4 +431,27 @@ body img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page-header {
+  background-color: var(--body-color);
+  border-bottom: 1px solid var(--border-color-header);
+}
+
+.page-header__container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
