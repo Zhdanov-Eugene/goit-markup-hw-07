@@ -412,4 +412,12 @@ body img {
   fill: var(--body-color);
   background-color: var(--accent-color);
 }
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*# sourceMappingURL=main.css.map */
