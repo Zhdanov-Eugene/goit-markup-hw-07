@@ -816,4 +816,30 @@ body img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
+
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-footer-color);
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+          box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+}
+
+.page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.page-footer__info {
+  margin: 0px;
+  width: 230px;
+  /* outline: 1px solid red; */
+}
 /*# sourceMappingURL=main.css.map */
