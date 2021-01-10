@@ -580,4 +580,37 @@ body img {
   margin-right: 10px;
   fill: currentColor;
 }
+
+.hero {
+  padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bg-hero-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero.jpg);
+  background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+          box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+  text-align: center;
+}
+
+.hero__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--body-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
