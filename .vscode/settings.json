@@ -1,23 +1,68 @@
 {
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "/css"
-        },
-        {
-            "format": "compressed",
-            "extensionName": ".min.css",
-            "savePath": "/css"
-        }
-    ],
-    "liveSassCompile.settings.excludeList": [
-        "**/node_modules/**",
-        ".vscode/**"
-    ],
-    "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
-    ]
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
+// {
+//   "workbench.iconTheme": "vscode-icons",
+//   "editor.fontSize": 14,
+//   "editor.tabSize": 2,
+//   "editor.formatOnPaste": false,
+//   "editor.formatOnType": false,
+//   "window.zoomLevel": 1,
+//   "git.autofetch": true,
+//   "files.autoSave": "afterDelay",
+//   "liveServer.settings.donotShowInfoMsg": true,
+//   "editor.formatOnSave": true,
+//   "eslint.autoFixOnSave": true,
+//   "eslint.alwaysShowStatus": true,
+//   "files.associations": {
+//     "*.js": "javascriptreact"
+//   },
+//   "breadcrumbs.enabled": true,
+//   "[typescriptreact]": {
+//     "editor.defaultFormatter": "vscode.typescript-language-features"
+//   },
+//   "[json]": {
+//     "breadcrumbs.showFiles": true,
+//     "editor.defaultFormatter": "esbenp.prettier-vscode"
+//   },
+//   "[javascriptreact]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode"
+//   },
+//   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+//   "liveServer.settings.donotVerifyTags": true,
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": true
+//   },
+//   "html.format.unformatted": "",
+//   "liveServer.settings.ChromeDebuggingAttachment": false,
+//   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+//   // "beautify.ignore": "",
+//   "notebook.kernelProviderAssociations": [
+//   ],
+//   "php.validate.executablePath": "c:/php/php.exe",
+//   "editor.renderWhitespace": "all",
+//   "files.trimTrailingWhitespace": true,
+//   "json.schemas": [],
+//   "editor.rulers": [
+//   ],
+//   "settingsSync.ignoredSettings": [
+//   ],
+//   "javascript.updateImportsOnFileMove.enabled": "always",
+//   "prettier.trailingComma": "all",
+//   "editor.semanticTokenColorCustomizations": null,
+//   "editor.fontLigatures": null
+// }

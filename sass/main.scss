@@ -2,3 +2,6 @@
 //  Жывой стиль пишется отдельными файлами и подключены в етот док.
 @import './utils/variables';
 @import './base/normalize';
+
+@import './components/global-attributes';
+@import './base/normalize';
