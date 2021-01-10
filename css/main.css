@@ -227,18 +227,18 @@ body {
   margin: 0;
 }
 
-body a {
+a {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-body address {
+address {
   color: inherit;
   font-style: normal;
 }
 
-body img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
