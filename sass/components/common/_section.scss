@@ -1,9 +1,11 @@
+/* ..........Section.......... */
+
 .section {
   padding-bottom: 94px;
 }
 
 .section__title {
-  color: var(--title-text-color);
+  color: $text-title-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

@@ -433,12 +433,13 @@ img {
   color: #2196f3;
 }
 
+/* ..........Section.......... */
 .section {
   padding-bottom: 94px;
 }
 
 .section__title {
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
