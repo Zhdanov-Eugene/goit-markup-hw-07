@@ -268,10 +268,10 @@ img {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid red;
 }
 
@@ -311,6 +311,12 @@ img {
 
 .page-footer__logo {
   margin-bottom: 20px;
+}
+
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 /* contacts-top */
@@ -569,7 +575,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav__item {
