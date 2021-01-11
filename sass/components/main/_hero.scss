@@ -1,3 +1,5 @@
+/* hero */
+
 .hero {
   padding-top: 200px;
   max-width: 1600px;
@@ -5,11 +7,8 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-color: var(--bg-hero-color);
-  background-image: linear-gradient(
-      var(--hero-overlay-color),
-      var(--hero-overlay-color)
-    ),
+  background-color: $background-hero-color;
+  background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
     url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +16,7 @@
 
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+  box-shadow: 0px 4px 4px $hero-box-shadow-color;
 
   text-align: center;
 }
@@ -28,7 +27,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  color: var(--body-color);
+  color: $white-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;

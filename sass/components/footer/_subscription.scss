@@ -15,7 +15,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--white-color);
+  color: $white-color;
 }
 
 .subscription__form {
@@ -33,18 +33,18 @@
   line-height: 1.25;
 
   letter-spacing: 0.03em;
-  color: var(--form-visually-hidden-placeholder-color);
-  border: 1px solid var(--form-input-border-solid-color);
+  color: $form-visually-hidden-placeholder-color;
+  border: 1px solid $form-input-border-solid-color;
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: transparent;
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .subscription__input:hover,
 .subscription__input:focus {
-  color: var(--white-color);
-  border: 1px solid var(--accent-blue-color);
+  color: $white-color;
+  border: 1px solid $accent-blue-color;
 }

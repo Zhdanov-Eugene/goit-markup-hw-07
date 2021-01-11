@@ -1,11 +1,13 @@
+/* footer */
+
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--bg-footer-color);
+  background-color: $background-footer-color;
   border: 1px solid #000000;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px var(--hero-box-shadow-color);
+  box-shadow: 0px 4px 4px $hero-box-shadow-color;
 }
 
 .page-footer__container {

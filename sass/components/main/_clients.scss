@@ -1,3 +1,5 @@
+/* regular-clients */
+
 .clients {
   padding-top: 94px;
 }
@@ -16,7 +18,7 @@
 }
 
 .clients__link {
-  fill: var(--cliennt-color);
+  fill: $cliennts-light-gray-color;
   border: 1px solid #afb1b8;
 
   box-sizing: border-box;
@@ -30,11 +32,11 @@
   justify-content: center;
   align-items: center;
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: $transition-time $time-distribution-function;
 }
 
 .clients__link:hover,
 .clients__link:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  fill: $accent-blue-color;
+  border: 1px solid $accent-blue-color;
 }

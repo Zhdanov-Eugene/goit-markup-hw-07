@@ -1,10 +1,9 @@
 html {
   box-sizing: border-box;
 }
-
 body {
-  background-color: var(--body-color);
-  color: var(--hero-text-color);
+  background-color: $white-color;
+  color: $text-gray-color;
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
@@ -13,12 +12,10 @@ a {
   color: inherit;
   display: block;
 }
-
 address {
   color: inherit;
   font-style: normal;
 }
-
 img {
   display: block;
   max-width: 100%;
