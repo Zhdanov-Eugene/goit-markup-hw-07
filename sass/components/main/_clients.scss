@@ -10,7 +10,8 @@
 
 .clients__item {
   display: flex;
-  width: calc((100% - 150px) / 6);
+  width: 170px;
+  // width: calc((100% - 150px) / 6);
 }
 
 .clients__item:not(:last-child) {
