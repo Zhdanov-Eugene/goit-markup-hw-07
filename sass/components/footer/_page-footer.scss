@@ -8,15 +8,15 @@
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px $hero-box-shadow-color;
-}
 
-.page-footer__container {
-  display: flex;
-  align-items: baseline;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.page-footer__info {
-  margin: 0px;
-  width: 230px;
-  /* outline: 1px solid red; */
+  &__info {
+    margin: 0px;
+    width: 230px;
+    /* outline: 1px solid red; */
+  }
 }

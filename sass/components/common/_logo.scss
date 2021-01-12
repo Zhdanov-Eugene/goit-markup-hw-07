@@ -8,20 +8,19 @@
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
-}
 
-.logo__web {
-  color: $accent-blue-color;
-}
+  &__web {
+    color: $accent-blue-color;
+  }
 
-.logo__studio {
-  color: $text-black-color;
-}
+  &__studio {
+    color: $text-black-color;
+  }
 
-.logo__studio--white {
-  color: $white-color;
+  &__studio--white {
+    color: $white-color;
+  }
 }
-
 .page-footer__logo {
   margin-bottom: 20px;
 }

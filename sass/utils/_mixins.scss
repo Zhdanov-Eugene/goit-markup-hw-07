@@ -1,45 +1,8 @@
 // Здесь миксины - настраемые елементы. Ниже пример
 
-// @mixin centeredFlex ($type: flex) {
-//     display: $type;
-//     align-items: center;
-//     justify-content: center;
+// @mixin font-style($weight: 400, $size: 14px, $height: 1.17, $spacing: 0.03em) {
+//   font-weight: $weight;
+//   font-size: $size;
+//   line-height: $height;
+//   letter-spacing: $spacing;
 // }
-
-// p {
-//     @include centeredFlex();
-// }
-
-// div {
-//      @include centeredFlex();
-// }
-
-// button {
-//      @include centeredFlex(inline-flex);
-// }
-// .socials-net__link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   .our-works__overlay {
-//   position: absolute;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   .clients__link {
-//         display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   .modal__check {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// portfolio
-// .content-selector {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;

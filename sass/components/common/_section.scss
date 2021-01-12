@@ -2,16 +2,16 @@
 
 .section {
   padding-bottom: 94px;
-}
 
-.section__title {
-  color: $text-title-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  &__title {
+    color: $text-title-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  margin-top: 0px;
-  margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }

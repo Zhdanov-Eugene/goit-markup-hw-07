@@ -3,48 +3,48 @@
   width: 570px;
   margin-left: 93px;
   /* outline: 1px solid red; */
-}
 
-.subscription__title {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: $white-color;
-}
+    color: $white-color;
+  }
 
-.subscription__form {
-  display: flex;
-}
+  &__form {
+    display: flex;
+  }
 
-.subscription__input {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  padding: 15px 16px;
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
 
-  letter-spacing: 0.03em;
-  color: $form-visually-hidden-placeholder-color;
-  border: 1px solid $form-input-border-solid-color;
-  box-sizing: border-box;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.03em;
+    color: $form-visually-hidden-placeholder-color;
+    border: 1px solid $form-input-border-solid-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  background-color: transparent;
-  transition: $transition-time $time-distribution-function;
-}
+    background-color: transparent;
+    transition: $transition-time $time-distribution-function;
+  }
 
-.subscription__input:hover,
-.subscription__input:focus {
-  color: $white-color;
-  border: 1px solid $accent-blue-color;
+  &__input:hover,
+  &__input:focus {
+    color: $white-color;
+    border: 1px solid $accent-blue-color;
+  }
 }

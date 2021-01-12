@@ -2,34 +2,34 @@
 
 .socials-net {
   display: flex;
-}
 
-.socials-net__item:not(:last-child) {
-  margin-right: 10px;
-}
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 
-.socials-net__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 
-  transition: $transition-time $time-distribution-function;
-}
+    transition: $transition-time $time-distribution-function;
+  }
 
-.socials-net__link--gray {
-  fill: $cliennts-light-gray-color;
-}
+  &__link--gray {
+    fill: $cliennts-light-gray-color;
+  }
 
-.socials-net__link--white {
-  fill: $white-color;
-  background: rgba(255, 255, 255, 0.1);
-}
+  &__link--white {
+    fill: $white-color;
+    background: rgba(255, 255, 255, 0.1);
+  }
 
-.socials-net__link:hover,
-.socials-net__link:focus {
-  fill: $white-color;
-  background-color: $accent-blue-color;
+  &__link:hover,
+  &__link:focus {
+    fill: $white-color;
+    background-color: $accent-blue-color;
+  }
 }

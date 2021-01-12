@@ -3,15 +3,15 @@
 .page-header {
   background-color: $white-color;
   border-bottom: 1px solid $border-header-color;
-}
 
-.page-header__container {
-  display: flex;
-  justify-content: space-between;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.page-header__nav {
-  display: flex;
-  align-items: center;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 }
 /* justify-content: space-between; */

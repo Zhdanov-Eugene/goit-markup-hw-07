@@ -1,6 +1,3 @@
-html {
-  box-sizing: border-box;
-}
 body {
   background-color: $white-color;
   color: $text-gray-color;
@@ -12,10 +9,7 @@ a {
   color: inherit;
   display: block;
 }
-address {
-  color: inherit;
-  font-style: normal;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -27,3 +21,10 @@ img {
   padding: 0px;
   margin: 0px;
 }
+// address {
+//   color: inherit;
+//   font-style: normal;
+// }
+// html {
+//   box-sizing: border-box;
+// }
